@@ -16,13 +16,13 @@ using namespace std;
 
 int main(){
     int apple_n,eating_time,total_time;
-    cout << "输入，苹果数，虫子吃掉一个苹果的时间，经过的时间" <<endl;
+//    cout << "输入，苹果数，虫子吃掉一个苹果的时间，经过的时间" <<endl;
     cin >> apple_n >> eating_time >> total_time;
     int apple = apple_n - eating_time * total_time;
     if(apple > 0){
-        cout << "剩余：" << apple << endl;
+        cout <<  apple << endl;
     }
     else{
-        cout << "无剩余苹果！" << endl;
+        cout << 0 << endl;
     }
 }

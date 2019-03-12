@@ -25,7 +25,7 @@ int main(){
     int numbers[6];
     int max_odd =0;
     int min_even =0;
-    cout << "输入6个正整数，必须包含至少一个奇数和一个偶数" << endl;
+//    cout << "输入6个正整数，必须包含至少一个奇数和一个偶数" << endl;
     for(int i =0;i<6;i++){
         cin >> numbers[i];
         if(numbers[i] % 2 ==1){
@@ -47,5 +47,5 @@ int main(){
         result = max_odd - min_even;
     }
 
-    cout << "差值:" << result << endl;
+    cout << result << endl;
 }

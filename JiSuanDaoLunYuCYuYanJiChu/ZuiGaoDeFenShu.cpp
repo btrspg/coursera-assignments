@@ -19,9 +19,9 @@ using namespace std;
 
 int main(){
     int n;
-    cout << "输入人数：" << endl;
+//    cout << "输入人数：" << endl;
     cin >> n;
-    cout << "输入分数：" << endl;
+//    cout << "输入分数：" << endl;
     int scores[n];
     for(int i=0;i < n; i++){
         cin >> scores[i];
@@ -32,5 +32,5 @@ int main(){
             highest = scores[i];
         }
     }
-    cout << "最高分数为:" << highest <<endl;
+    cout <<  highest <<endl;
 }

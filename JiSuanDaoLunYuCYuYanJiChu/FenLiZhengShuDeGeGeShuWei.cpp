@@ -18,13 +18,13 @@ using namespace std;
 */
 
 int main(){
-    cout << "输入三位数:" << endl;
+//    cout << "输入三位数:" << endl;
     int n;
     cin >> n;
     int bai = n /100;
     int shi = n/10 -bai * 10;
     int ge = n - bai*100 - shi * 10;
-    cout << "百：" << bai << endl;
-    cout << "十：" << shi << endl;
-    cout << "个：" << ge << endl;
+    cout << bai << endl;
+    cout << shi << endl;
+    cout << ge << endl;
 }
