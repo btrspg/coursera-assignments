@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 //### 编程题＃1：苹果和虫子
 //来源: POJ (Coursera声明：在POJ上完成的习题将不会计入Coursera的最后成绩。)
@@ -15,10 +16,10 @@ using namespace std;
 //输出也仅一行，剩下的苹果个数
 
 int main(){
-    int apple_n,eating_time,total_time;
+    float apple_n,eating_time,total_time;
 //    cout << "输入，苹果数，虫子吃掉一个苹果的时间，经过的时间" <<endl;
     cin >> apple_n >> eating_time >> total_time;
-    int apple = apple_n - eating_time * total_time;
+    float apple = apple_n - ceil(total_time/eating_time)  ;
     if(apple > 0){
         cout <<  apple << endl;
     }

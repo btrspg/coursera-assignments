@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 /*
@@ -18,10 +19,10 @@ using namespace std;
 */
 
 int main(){
-    float pi = 3.14;
+    float pi = 3.14159;
     float height,radius;
 //    cout << "输入桶的高度及半径！\n" << endl;
     cin >> height >> radius;
-    int number = 20/(pi * (radius/100* radius/100) * height /100);
+    int number = ceil(20*1000/(pi * (radius* radius) * height ));
     cout << number << endl;
 }
